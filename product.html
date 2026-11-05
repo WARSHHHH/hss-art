@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Все продукты — HSS ART</title>
+  <meta name="description" content="Весь ассортимент дизайнерских интерьерных красок и грунтов HSS ART.">
+  <meta name="theme-color" content="#e8e1d5">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/logo_snisy.svg" type="image/png">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__in">
+    <a class="logo" href="index.html" aria-label="HSS ART paint"><img src="img/logo.svg" alt="HSS ART paint"></a>
+    <button class="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="index.html#catalog">Каталог</a>
+      <a href="index.html#brand">О бренде</a>
+      <a href="index.html#services">Услуги</a>
+      <a href="index.html#contacts">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="catalog catalog--page">
+    <div class="catalog__in">
+      <div class="catalog__head">
+        <div>
+          <p class="eyebrow">Коллекция HSS ART</p>
+          <h1 class="page-title">Все продукты</h1>
+        </div>
+        <p class="catalog__note">Грунты и краски для стен и потолков. Выберите объём и добавьте в корзину, остальное мы уточним при подтверждении заказа.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Фильтр по назначению">
+        <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">Все</button>
+        <button class="chip" type="button" data-filter="primer" aria-pressed="false">Грунты</button>
+        <button class="chip" type="button" data-filter="walls" aria-pressed="false">Для стен</button>
+        <button class="chip" type="button" data-filter="ceiling" aria-pressed="false">Для потолков</button>
+      </div>
+
+      <div class="grid" id="productGrid"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__brand">
+      <img src="img/logo_snisy.svg" alt="HSS ART paint">
+      <small>© 2026 HSS ART · Дизайнерские краски для интерьера</small>
+    </div>
+    <a class="footer__dev" href="https://warshhhh.github.io/TWO-ONE/">Разработка сайта</a>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+<script src="product.js"></script>
+</body>
+</html>
